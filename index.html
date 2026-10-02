@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://anotherrealmconsulting.com/">
 <meta property="og:title" content="Never Miss a Lead — free 15-minute audit">
 <meta property="og:description" content="Another Realm Consulting builds and manages the systems that keep customer inquiries from slipping through the cracks. Request a free 15-minute Lead Leak Audit.">
-<meta property="og:image" content="https://anotherrealmconsulting.com/og-image.png">
+<meta property="og:image" content="https://anotherrealmconsulting.com/og-image-v2.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Another Realm Consulting — every inquiry captured, every opportunity followed up.">
@@ -23,7 +23,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Never Miss a Lead — free 15-minute audit">
 <meta name="twitter:description" content="Another Realm Consulting builds and manages the systems that keep customer inquiries from slipping through the cracks. Request a free 15-minute Lead Leak Audit.">
-<meta name="twitter:image" content="https://anotherrealmconsulting.com/og-image.png">
+<meta name="twitter:image" content="https://anotherrealmconsulting.com/og-image-v2.png">
 <meta name="twitter:image:alt" content="Another Realm Consulting — every inquiry captured, every opportunity followed up.">
 
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -132,10 +132,20 @@ a{color:var(--blue-dark)}
   background:var(--blue);color:#fff;text-decoration:none;font-weight:650;font-size:.88rem;
   border-radius:8px;transition:background .18s ease;
 }
-.header-cta:hover{background:#5A7DE8}
+.header-cta:hover{background:#2F51BE}
+.header-tel{
+  display:inline-flex;align-items:center;min-height:44px;padding:10px 12px;
+  color:#9FB8FF;text-decoration:none;font-weight:650;font-size:.9rem;white-space:nowrap;
+}
+.header-tel:hover{color:#FAFAFA;text-decoration:underline}
+.form-alt{
+  margin:14px 0 0;font-size:.92rem;color:#3A4557;text-align:center;
+}
+.form-alt a{color:#2F51BE;font-weight:650}
 @media(max-width:560px){
-  .header-inner{justify-content:center}
+  .header-inner{justify-content:space-between;gap:10px}
   .header-cta{display:none}
+  .header-tel{display:inline-flex}
 }
 
 /* ── Hero ──────────────────────────────────────────────── */
@@ -192,9 +202,9 @@ a{color:var(--blue-dark)}
   transition:background .18s ease,box-shadow .18s ease,transform .12s ease;
   -webkit-tap-highlight-color:transparent;
 }
-.btn:hover{background:#5A7DE8;box-shadow:0 4px 20px rgba(65,105,225,.42)}
+.btn:hover{background:#2F51BE;box-shadow:0 4px 20px rgba(65,105,225,.42)}
 .btn:active{transform:translateY(1px)}
-.btn[disabled]{background:#6E80B8;box-shadow:none;cursor:progress}
+.btn[disabled]{background:#4A5E96;box-shadow:none;cursor:progress}
 .btn-arrow{font-size:1.05em;line-height:1}
 .btn[disabled] .btn-arrow{display:none}
 @media(max-width:520px){.btn{width:100%}}
@@ -302,11 +312,11 @@ a{color:var(--blue-dark)}
   display:block;font-size:.85rem;font-weight:650;color:var(--ink);
   margin-bottom:6px;letter-spacing:.005em;
 }
-.opt{font-weight:500;color:#77839A;letter-spacing:0}
+.opt{font-weight:500;color:#5B6678;letter-spacing:0}
 .field input,.field select,.field textarea{
   width:100%;min-height:50px;padding:13px 14px;
   font-family:inherit;font-size:1rem;color:var(--ink);line-height:1.4;
-  background:#fff;border:1px solid #C9D0DE;border-radius:8px;
+  background:#fff;border:1px solid #808A9E;border-radius:8px;
   transition:border-color .15s ease,box-shadow .15s ease;
 }
 .field textarea{min-height:104px;resize:vertical}
@@ -358,7 +368,7 @@ a{color:var(--blue-dark)}
   padding:34px 0;color:#8E9DBC;font-size:.87rem;
 }
 .footer-inner{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between}
-.site-footer a{color:#A9B6D0;text-decoration:none}
+.site-footer a{color:#A9B6D0;text-decoration:none;display:inline-block;padding:8px 0}
 .site-footer a:hover{color:#FAFAFA;text-decoration:underline}
 </style>
 </head>
@@ -375,6 +385,7 @@ a{color:var(--blue-dark)}
         <span class="brand-b">Consulting</span>
       </span>
     </a>
+    <a class="header-tel" href="tel:+16147455321">(614) 745-5321</a>
     <a class="header-cta" href="#audit-form">Get a Free 15-Minute Lead Leak Audit</a>
   </div>
 </header>
@@ -400,7 +411,7 @@ a{color:var(--blue-dark)}
       <p style="margin-top:28px">
         <a class="btn" href="#audit-form">Get a Free 15-Minute Lead Leak Audit <span class="btn-arrow" aria-hidden="true">&rarr;</span></a>
       </p>
-      <p class="hero-note">No cost, no obligation. Fifteen minutes on the phone.</p>
+      <p class="hero-note">No cost, no obligation. Fifteen minutes on the phone. Or call <a href="tel:+16147455321">(614) 745-5321</a>.</p>
     </div>
   </section>
 
@@ -469,7 +480,7 @@ a{color:var(--blue-dark)}
         </p>
       </div>
 
-      <ol class="flow">
+      <ol class="flow" role="list">
         <li>
           <span class="flow-node" aria-hidden="true">1</span>
           <h3>Customer reaches out</h3>
@@ -524,7 +535,7 @@ a{color:var(--blue-dark)}
         </p>
       </div>
 
-      <ul class="gets">
+      <ul class="gets" role="list">
         <li><strong>One organized place for opportunities</strong>Every incoming inquiry in a single list instead of scattered across inboxes and phones.</li>
         <li><strong>Immediate owner and team notification</strong>You know about a new inquiry when it happens, not when you next check your email.</li>
         <li><strong>Immediate customer acknowledgment</strong>The person who reached out gets confirmation right away that their message landed.</li>
@@ -570,7 +581,7 @@ a{color:var(--blue-dark)}
           <h3 style="font-size:1rem;letter-spacing:.14em;text-transform:uppercase;color:#93AEFF;font-weight:700">
             What it might turn up
           </h3>
-          <ul class="finds">
+          <ul class="finds" role="list">
             <li><strong>A lead-handling and follow-up problem.</strong> Opportunities are arriving,
             but the process for responding to and tracking them is inconsistent.</li>
             <li><strong>A website and contact conversion problem.</strong> People are visiting, but
@@ -647,7 +658,14 @@ a{color:var(--blue-dark)}
         </div>
 
         <div class="form-card">
-          <form id="auditForm" novalidate>
+          <noscript>
+            <p class="form-alt" style="text-align:left">
+              This form needs JavaScript. You can reach us directly instead:
+              <a href="tel:+16147455321">(614) 745-5321</a> or
+              <a href="mailto:info@anotherrealmconsulting.com">info@anotherrealmconsulting.com</a>.
+            </p>
+          </noscript>
+          <form id="auditForm" method="post" action="#audit-form" novalidate>
             <div class="field">
               <label for="f-name">Your name</label>
               <input type="text" id="f-name" name="name" autocomplete="name" required
@@ -721,8 +739,9 @@ a{color:var(--blue-dark)}
               <span class="btn-arrow" aria-hidden="true">&rarr;</span>
             </button>
 
-            <div class="form-status" id="formStatus" role="status" aria-live="polite" aria-atomic="true"></div>
+            <div class="form-status" id="formStatus" role="alert" aria-live="assertive" aria-atomic="true"></div>
 
+            <p class="form-alt">Rather just call? <a href="tel:+16147455321">(614) 745-5321</a></p>
             <p class="form-legal">
               We use your details only to contact you about your audit request. We don't sell your
               information, and we won't add you to a marketing list from this form. Your phone number
@@ -748,6 +767,7 @@ a{color:var(--blue-dark)}
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <span>&copy; 2026 Another Realm Consulting</span>
+    <span><a href="tel:+16147455321">(614) 745-5321</a></span>
     <span><a href="mailto:info@anotherrealmconsulting.com">info@anotherrealmconsulting.com</a></span>
   </div>
 </footer>
@@ -873,7 +893,7 @@ a{color:var(--blue-dark)}
         return { status: res.status, ok: res.ok, data: data };
       });
     }).then(function (r) {
-      if (r.data && r.data.ok) {
+      if (r.ok && (!r.data || r.data.ok !== false)) {
         form.hidden = true;
         success.hidden = false;
         success.focus();
