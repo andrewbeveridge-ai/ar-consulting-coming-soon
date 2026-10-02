@@ -118,13 +118,7 @@ a{color:var(--blue-dark)}
 }
 .brand{display:flex;align-items:center;gap:11px;text-decoration:none;flex-shrink:0}
 .brand-mark{
-  width:28px;height:28px;flex-shrink:0;border-radius:50%;
-  border:1.5px solid var(--blue);position:relative;
-  box-shadow:0 0 0 4px rgba(65,105,225,.12);
-}
-.brand-mark::after{
-  content:"";position:absolute;top:50%;left:50%;width:9px;height:9px;margin:-4.5px 0 0 -4.5px;
-  border-radius:50%;background:var(--blue);
+  width:40px;height:40px;flex-shrink:0;display:block;
 }
 .brand-text{display:flex;flex-direction:column;line-height:1.08}
 .brand-a{
@@ -375,7 +369,7 @@ a{color:var(--blue-dark)}
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="/" aria-label="Another Realm Consulting — home">
-      <span class="brand-mark" aria-hidden="true"></span>
+      <svg class="brand-mark" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><g fill="none" stroke-linecap="round"><ellipse cx="256" cy="256" rx="186.9" ry="74.7" transform="rotate(30 256 256)" stroke="#8FA3C4" stroke-width="16"/><ellipse cx="256" cy="256" rx="226.9" ry="90.7" transform="rotate(-20 256 256)" stroke="#4169E1" stroke-width="16"/><ellipse cx="256" cy="256" rx="138" ry="57.1" transform="rotate(-8 256 256)" stroke="#9FB8FF" stroke-width="16"/></g><circle cx="256" cy="256" r="55" fill="#4169E1"/></svg>
       <span class="brand-text">
         <span class="brand-a">Another Realm</span>
         <span class="brand-b">Consulting</span>
